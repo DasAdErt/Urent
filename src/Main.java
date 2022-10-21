@@ -5,6 +5,7 @@ public class Main {
       Client client = new Client();
 
       System.out.println("Введите ваш возраст. ");
+      System.out.print("Возраст: ");
 
       Scanner scanner = new Scanner(System.in);
       client.age = scanner.nextInt();
@@ -19,11 +20,13 @@ public class Main {
             System.out.println("Какой вы хотите выбрать парк самокатов?");
             System.out.println("1.Парк самокатов #1");
             System.out.println("2.Парк самокатов Яндекс");
+            System.out.println();
             System.out.println("Цены:");
-            System.out.println("Парк самокатов #1, 20 рублей на 1 км.");
-            System.out.println("Парк самокатов Яндекс, 35 рублей на 1 км.");
+            System.out.println("1.Парк самокатов #1, 20 рублей на 1 км.");
+            System.out.println("2.Парк самокатов Яндекс, 35 рублей на 1 км.");
             System.out.print("Выбор: ");
             workApp.scooterPark = scanner.nextInt();
+            System.out.println();
             switch (workApp.scooterPark)
             {
                 case 1:
@@ -33,7 +36,9 @@ public class Main {
                             break;
                         case 1:
                             System.out.println("Введите какую дистанцую хотите проехать в км.");
+                            System.out.print("Дистанция: ");
                             client.distance = scanner.nextInt();
+                            System.out.println();
                             rent.price = 20;
 
                             int priceKm =  client.distance * rent.price;
@@ -60,7 +65,9 @@ public class Main {
                             break;
                         case 1:
                             System.out.println("Введите какую дистанцую хотите проехать в км.");
+                            System.out.print("Дистанция: ");
                             client.distance = scanner.nextInt();
+                            System.out.println();
                             rent.price = 35;
 
                             int priceKm =  client.distance * rent.price;
