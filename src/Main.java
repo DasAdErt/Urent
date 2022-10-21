@@ -19,8 +19,9 @@ public class Main {
             System.out.println("Какой вы хотите выбрать парк самокатов?");
             System.out.println("1.Парк самокатов #1");
             System.out.println("2.Парк самокатов Яндекс");
-            System.out.println("Цена за 1 километр в:");
-            System.out.println("Парк самокатов #1 равна 20 рублям. А в Парке самокатов Яндекс равна 35 рублям.");
+            System.out.println("Цены:");
+            System.out.println("Парк самокатов #1, 20 рублей на 1 км.");
+            System.out.println("Парк самокатов Яндекс, 35 рублей на 1 км.");
             System.out.print("Выбор: ");
             workApp.scooterPark = scanner.nextInt();
             switch (workApp.scooterPark)
