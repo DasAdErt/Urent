@@ -17,6 +17,7 @@ public class Main {
       workApp.tracking = 1;
 
         if (client.age >= 18 && client.age <= 80) {
+
             System.out.println("Какой вы хотите выбрать парк самокатов?");
             System.out.println("1.Парк самокатов #1");
             System.out.println("2.Парк самокатов Яндекс");
@@ -25,8 +26,10 @@ public class Main {
             System.out.println("1.Парк самокатов #1, 20 рублей на 1 км.");
             System.out.println("2.Парк самокатов Яндекс, 35 рублей на 1 км.");
             System.out.print("Выбор: ");
+
             workApp.scooterPark = scanner.nextInt();
             System.out.println();
+
             switch (workApp.scooterPark)
             {
                 case 1:
@@ -39,6 +42,7 @@ public class Main {
                             System.out.print("Дистанция: ");
                             client.distance = scanner.nextInt();
                             System.out.println();
+
                             rent.price = 20;
 
                             int priceKm =  client.distance * rent.price;
@@ -68,6 +72,7 @@ public class Main {
                             System.out.print("Дистанция: ");
                             client.distance = scanner.nextInt();
                             System.out.println();
+
                             rent.price = 35;
 
                             int priceKm =  client.distance * rent.price;
